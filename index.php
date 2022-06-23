@@ -57,7 +57,6 @@ $faqs= [
 
 ]
  
-
 ?>
 
 <!DOCTYPE html>
@@ -70,6 +69,9 @@ $faqs= [
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <?php foreach($faqs as $faq){ ?>
+        <h2><?php echo $faq['question']; ?></h2>
+            <?php echo $faq['answer']; ?>
+   <?php } ?>
 </body>
 </html>
