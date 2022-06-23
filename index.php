@@ -28,13 +28,13 @@ $faqs= [
         'question'=>"Perché il mio account è associato a un paese?",
         'answer'=> " <p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose: <p>
         <ol>
-        <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
-            <ol>
-                <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
-                <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
-            </ol>
-        </li>
-        <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
+            <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+                <ol>
+                    <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+                    <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+                </ol>
+            </li>
+            <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
         </ol>
         <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>
         
@@ -69,9 +69,24 @@ $faqs= [
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header> 
+    <img src="img/logo.png" alt="logo google proivacy e termini">
+    <nav> 
+        <ul>
+            <li>Introduzione</li>
+            <li>Norme sulla privacy</li>
+            <li>Termini di servizio</li>
+            <li>Tecnologie</li>
+            <li>Domande frequenti</li>
+        </ul>
+    </nav>
+    <hr>
+    </header>
+    <main>
     <?php foreach($faqs as $faq){ ?>
         <h2><?php echo $faq['question']; ?></h2>
             <?php echo $faq['answer']; ?>
-   <?php } ?>
+        <?php } ?>
+    </main>
 </body>
 </html>

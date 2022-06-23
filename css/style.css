@@ -6,3 +6,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/*---------------
+    TYPO
+----------------*/
+body{
+    font-family: sans-serif;
+}
+
+/*--------------
+    HEADER
+----------------*/
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin: 0 2rem;
+}
+ 
+hr{
+    margin:  .9375rem 0 4.5rem;
+}
+/*---------------
+    MAIN
+-------------*/
+main{
+    max-width: 75rem;
+    margin: auto;
+}
+
+main p{
+    margin: 2rem 0;
+}
