@@ -1,11 +1,3 @@
-/*-----------------
-    RESET
------------------*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 /*---------------
     TYPO
@@ -40,3 +32,4 @@ main{
 main p{
     margin: 2rem 0;
 }
+
